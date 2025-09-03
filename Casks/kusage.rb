@@ -3,7 +3,7 @@ cask "kusage" do
   name "kusage"
   desc "Rank Kubernetes pods/containers by CPU/memory usage (usage ÷ limit)."
   homepage ""
-  version "0.0.3"
+  version "0.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,26 +12,26 @@ cask "kusage" do
   on_macos do
     on_intel do
       url "https://github.com/mchmarny/kusage/releases/download/v#{version}/kusage_v#{version}_darwin_amd64"
-      sha256 "402850f55dc6171d082d6dcb8896758eebb3ce9acadf1490a1f1d121f23b744e"
-      binary "kusage_v0.0.3_darwin_amd64", target: "kusage"
+      sha256 "9e0906f5b640881754dbdd75cdbfee493eecf290b324dabc8862b1edb5012862"
+      binary "kusage_v0.1.0_darwin_amd64", target: "kusage"
     end
     on_arm do
       url "https://github.com/mchmarny/kusage/releases/download/v#{version}/kusage_v#{version}_darwin_arm64"
-      sha256 "64f359933aed202ea239d4872f6680f0762b35406f3d6ef65bfb49d8694d0a97"
-      binary "kusage_v0.0.3_darwin_arm64", target: "kusage"
+      sha256 "43af8ffedf22eb1c6707e316629e05581e6a7ac89402448c1a1e6c302c929285"
+      binary "kusage_v0.1.0_darwin_arm64", target: "kusage"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/mchmarny/kusage/releases/download/v#{version}/kusage_v#{version}_linux_amd64"
-      sha256 "64ac547e76698e2b587a9b70ceca729d6357028e6089ebd66ac640ae0d77e786"
-      binary "kusage_v0.0.3_linux_amd64", target: "kusage"
+      sha256 "cb09c9ec334350a557a021fbf44c17ddb6f7c7c350f1ad68a16a60749cb476ef"
+      binary "kusage_v0.1.0_linux_amd64", target: "kusage"
     end
     on_arm do
       url "https://github.com/mchmarny/kusage/releases/download/v#{version}/kusage_v#{version}_linux_arm64"
-      sha256 "f3959b98075083e5d09ea5dfc1486e723015d0d2305f0ce4693262ca6793c0d5"
-      binary "kusage_v0.0.3_linux_arm64", target: "kusage"
+      sha256 "583db1f995b45de5f21e922236d16662ec365d5c880deee872c46b94d3faeaf4"
+      binary "kusage_v0.1.0_linux_arm64", target: "kusage"
     end
   end
 
