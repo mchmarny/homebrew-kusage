@@ -5,20 +5,20 @@
 class Kusage < Formula
   desc "Rank Kubernetes pods/containers by CPU/memory usage (usage ÷ limit)."
   homepage "https://github.com/mchmarny/kusage"
-  version "0.2.0"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mchmarny/kusage/releases/download/v0.2.0/kusage_v0.2.0_darwin_amd64.tar.gz"
-      sha256 "ab54af427f083a31b4a1f0bacbb99e48367d783fee880ac51b79a459cc47ee31"
+      url "https://github.com/mchmarny/kusage/releases/download/v0.2.2/kusage_v0.2.2_darwin_amd64.tar.gz"
+      sha256 "726180515974b9b882640357c30a145e7fd8b54b00cef19fb7d2c1c7671dc282"
 
       def install
         bin.install "kusage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mchmarny/kusage/releases/download/v0.2.0/kusage_v0.2.0_darwin_arm64.tar.gz"
-      sha256 "a3c5176fa746d45032f5232f7faf6f49c412ad57c2b627977127244232122fe4"
+      url "https://github.com/mchmarny/kusage/releases/download/v0.2.2/kusage_v0.2.2_darwin_arm64.tar.gz"
+      sha256 "287dc8e62ab967626faeaae048c2b1c9095ab643fb92af1dda79db4b5cd378b1"
 
       def install
         bin.install "kusage"
@@ -28,15 +28,15 @@ class Kusage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mchmarny/kusage/releases/download/v0.2.0/kusage_v0.2.0_linux_amd64.tar.gz"
-      sha256 "212520bd54c5cda9f4430fa5d1a0dbfcbb8b0bf790db1c0547d9f44fd0d5589e"
+      url "https://github.com/mchmarny/kusage/releases/download/v0.2.2/kusage_v0.2.2_linux_amd64.tar.gz"
+      sha256 "662953c87ca9a3989379ba8c56e81ea8549bb53c065e63b10604eb68daac0613"
       def install
         bin.install "kusage"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mchmarny/kusage/releases/download/v0.2.0/kusage_v0.2.0_linux_arm64.tar.gz"
-      sha256 "95cc378f34d1947faca180814d9968e3c73bf5c5b34030a8e030de8469ab082c"
+      url "https://github.com/mchmarny/kusage/releases/download/v0.2.2/kusage_v0.2.2_linux_arm64.tar.gz"
+      sha256 "a18953c6f854ef40da8c779eeafc71d316412bb97cf00d2c60bc3d6112e87c96"
       def install
         bin.install "kusage"
       end
